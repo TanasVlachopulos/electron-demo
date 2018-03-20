@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>Testovací aplikace v Electron frameworku!</h2>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    Node version
+    <script>document.write(process.versions.node)</script>, Chromium version
+    <script>document.write(process.versions.chrome)</script>, and Electron version
+    <script>document.write(process.versions.electron)</script>.
+
+    <p>
+      <button class="waves-effect waves-light btn green" id="basic">Notify me</button>
+
+    </p>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+
+</html>
